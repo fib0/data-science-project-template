@@ -70,7 +70,7 @@ def get_package_manager() -> CondaLikePackageManager:
 
 
 def _verify_if_dir_valid(path_to_dir: pathlib.Path):
-    if not path_to_dir.isdir():
+    if not path_to_dir.is_dir():
         raise RuntimeError(f"{path_to_dir} is not a valid directory.")
 
 
